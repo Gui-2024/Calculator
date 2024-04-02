@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/calculadora/style/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+      <input type="text" class="display" readonly>
+        <div class="buttons">
+          <div class="first-row">
+            <button class="btn-cinza" onclick="clearDisplay('AC')"><i class="fa-solid fa-eraser"></i></button>
+            <button class="btn-cinza" onclick="appendToDisplay('+/-')">+/-</button>
+            <button class="btn-cinza" onclick="appendToDisplay('%')"><i class="fa-solid fa-percent"></i></button>
+            <button class="btn-amarelo" onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+          </div>
+          <div class="second-row">
+            <button class="btn-chumbo" onclick="appendToDisplay('7')"><i class="fa-solid fa-7"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('8')"><i class="fa-solid fa-8"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('9')"><i class="fa-solid fa-9"></i></button>
+            <button class="btn-amarelo" onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="tree-row">
+            <button class="btn-chumbo" onclick="appendToDisplay('4')"><i class="fa-solid fa-4"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('5')"><i class="fa-solid fa-5"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('6')"><i class="fa-solid fa-6"></i></button>
+            <button class="btn-amarelo" onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+          </div>
+          <div class="for-row">
+            <button class="btn-chumbo" onclick="appendToDisplay('1')"><i class="fa-solid fa-1"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('2')"><i class="fa-solid fa-2"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('3')"><i class="fa-solid fa-3"></i></button>
+            <button class="btn-amarelo" onclick="appendToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="five-row">
+            <button class="zero" onclick="appendToDisplay('0')"><i class="fa-solid fa-0"></i></button>
+            <button class="btn-chumbo" onclick="appendToDisplay('.')">,</button>
+            <button class="btn-amarelo" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+          </div>
+        </div>
+    </div>
+    <script src="/calculadora/javascript/calculadora.js"></script>
+</body>
+</html>
